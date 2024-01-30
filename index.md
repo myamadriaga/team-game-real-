@@ -6,8 +6,7 @@ title: Team Game
 
 ## <span style="font-family:Courier New;">Escape the Jungle!</span>
 
-
-<span style="font-family:Courier New;">Abby M., Manahil K., Mya M., Sahana P.</span>
+<span style="font-family:Courier New; font-size: 20px;">Abby M., Manahil K., Mya M., Sahana P.</span>
 
 ## About the game
 Blogging in GitHub pages is a way to learn and code at the same time. 
