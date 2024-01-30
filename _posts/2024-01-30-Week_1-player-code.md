@@ -7,6 +7,7 @@ description: Example Blog!!!  This shows planning and notes from hacks.
 type: plans
 courses: { compsci: {week: 0} }
 ---
+
 <style>
     #canvas {
         margin: 0;
@@ -41,7 +42,7 @@ courses: { compsci: {week: 0} }
         }
         // Method to draw the player on the canvas
         draw() {
-            c.fillStyle = #f0ceea;
+            c.fillStyle = 'red';
             c.fillRect(this.position.x, this.position.y, this.width, this.height);
         }
         // Method to update the players position and velocity
