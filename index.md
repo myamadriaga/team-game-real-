@@ -3,7 +3,8 @@ layout: default
 title: Team Game
 ---
 
-<p style="font-family: Honk;">
+<p style="font-family: Single Day;">
+
 ## Escape the Jungle! </p>
 
 Abby M., Manahil K., Mya M., Sahana P.
