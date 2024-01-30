@@ -67,9 +67,6 @@ courses: { compsci: {week: 0} }
             pressed: false
         }
     };
-    // make spirte for player 
-    let imageplayer = new Image()
-    imageplayer.src = {{site.baseurl}}/images/transparent-brown-bear.png
     // Animation function to continuously update and render the canvas
     function animate() {
         requestAnimationFrame(animate);
