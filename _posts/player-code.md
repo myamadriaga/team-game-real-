@@ -41,7 +41,7 @@ courses: { compsci: {week: 0} }
         }
         // Method to draw the player on the canvas
         draw() {
-            c.fillStyle = 'red';
+            c.fillStyle = #f0ceea;
             c.fillRect(this.position.x, this.position.y, this.width, this.height);
         }
         // Method to update the players position and velocity
