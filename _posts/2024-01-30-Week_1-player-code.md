@@ -67,6 +67,10 @@ courses: { compsci: {week: 0} }
             pressed: false
         }
     };
+    // make spirte for player 
+    let imageplayer = new Image()
+    imageplayer.src = //image
+    let platform
     // Animation function to continuously update and render the canvas
     function animate() {
         requestAnimationFrame(animate);
