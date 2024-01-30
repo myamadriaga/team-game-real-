@@ -6,7 +6,7 @@ title: Team Game
 <p style="font-family: Honk;"
 ## Escape the Jungle!
 
-Abby M., Manahil K., Mya M., Sahana P.
+<span style="font-family: barlow condensed, sans-serif;">Abby M., Manahil K., Mya M., Sahana P.</span>
 
 ## Overview of Hacks, Study and Tangibles
 Blogging in GitHub pages is a way to learn and code at the same time. 
