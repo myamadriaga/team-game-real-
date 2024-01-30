@@ -4,21 +4,22 @@ title: Team Game
 ---
 
 
-## Escape the Jungle! 
+## <span style="font-family:Courier New;">Escape the Jungle!</span>
 
-<span style="font-family: teko;">Abby M., Manahil K., Mya M., Sahana P.</span>
+
+<span style="font-family:Courier New;">Abby M., Manahil K., Mya M., Sahana P.</span>
 
 ## About the game
 
 
 <head>
-  <font face="Playfair Display"><title>snake High Score</title></font>
+  <font face="Courier New"><title>snake High Score</title></font>
 </head>
 <body>
   <!-- Your game canvas or container -->
   
   <div>
-    <font face="Playfair Display"><p class="fs-4">High score: <span id="highScore">0</span></p></font>
+    <font face="Courier New"><p class="fs-4">High score: <span id="highScore">0</span></p></font>
   </div>
  <script>
     (function(){
