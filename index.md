@@ -3,8 +3,9 @@ layout: default
 title: Team Game
 ---
 
-
+<p style="font-family: Honk;"
 ## Escape the Jungle!
+
 Abby M., Manahil K., Mya M., Sahana P.
 
 ## Overview of Hacks, Study and Tangibles
