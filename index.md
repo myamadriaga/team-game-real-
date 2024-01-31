@@ -8,7 +8,8 @@ title: Team Game
 
 <span style="font-family:Courier New; font-size: 20px;">Abby M., Manahil K., Mya M., Sahana P.</span>
 
-## About the game
+## <span style="font-family:Courier New; font-size: 24px;">About the game</span>
+
 
 
 <head>
