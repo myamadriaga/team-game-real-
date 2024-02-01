@@ -2,9 +2,7 @@
 layout: default
 title: Team Game
 ---
-<<<<<<< HEAD
 game 
-=======
 
 
 ## <span style="font-family:Courier New; font-size: 30px;">Escape the Jungle!</span>
@@ -50,7 +48,6 @@ game
             }
         }
         
->>>>>>> f7b36b8d1778388000d96d06bac329c0c3d1206d
 <style>
     #canvas {
         margin: 0;
