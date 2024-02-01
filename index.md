@@ -2,7 +2,7 @@
 layout: default
 title: Team Game
 ---
-
+game 
 
 
 ## <span style="font-family:Courier New; font-size: 30px;">Escape the Jungle!</span>
@@ -46,16 +46,8 @@ title: Team Game
         // 2 for the settings screen
         // 3 for the game over screen
             }
-        )
+        }
         
-<div class="container bg-secondary" style="text-align:center;">
-  <!-- Main Menu -->
-        <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin</p>
-            <a id="new_game" class="link-alert">new game</a>
-            <a id="setting_menu" class="link-alert">settings</a>
-        </div>
-
 <style>
     #canvas {
         margin: 0;
