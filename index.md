@@ -7,7 +7,7 @@ title: Team Game
 <div class="container bg-secondary" style="text-align:center;">
   <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin</p>
+            <p>Welcome to Escape the Jungle!, press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin your adventure</p>
             <a id="new_game" class="link-alert">new game</a>
             <a id="setting_menu" class="link-alert">settings</a>
         </div>
