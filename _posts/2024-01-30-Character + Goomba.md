@@ -9,8 +9,8 @@ courses: { compsci: {week: 2} }
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    #canvas {
+   <style>
+     #canvas {
         margin: 0;
         border: 1px solid white;
     }
@@ -111,61 +111,7 @@ courses: { compsci: {week: 2} }
                 player.velocity.y = -20;
                 break;
         }
-    })
-<style>
- #canvas {
-        margin: 0;
-        border: 1px solid white;
-    }
-</style>
-<canvas id='canvas'></canvas>
-<script>
-    let canvas = document.getElementById('canvas');
-    let c = canvas.getContext('2d');
-    canvas.width = 650;
-    canvas.height = 400;
-    let gravity = 1.5;
-    class Player {
-        constructor() {
-            this.position = {
-                x: 100,
-                y: 200
-            };
-            this.velocity = {
-                x: 0,
-                y: 0
-            };
-            this.width = 30;
-            this.height = 30;
-        }
-        draw() {
-            c.fillStyle = 'red';
-            c.fillRect(this.position.x, this.position.y, this.width, this.height);
-        }
-        update() {
-            this.draw();
-            this.position.y += this.velocity.y;
-            this.position.x += this.velocity.x;
-            if (this.position.y + this.height + this.velocity.y <= canvas.height)
-                this.velocity.y += gravity;
-            else
-                this.velocity.y = 0;
-        }
-    }
-    class Platform {
-        constructor(image) {
-            this.position = {
-                x: 0,
-                y: 300
-            }
-            this.image = image;
-            this.width = 650;
-            this.height = 100;
-        }
-        draw() {
-            c.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
-        }
-    }
+    }) 
     class Tube {
         constructor(image) {
             this.position = {
