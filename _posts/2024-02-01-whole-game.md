@@ -2,8 +2,8 @@
 toc: true
 comments: false
 layout: post
-title: Testing Player Code 
-description: Example Blog!!!  This shows planning and notes from hacks.
+title: whole game
+description: 
 type: plans
 courses: { compsci: {week: 0} }
 ---
