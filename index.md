@@ -2,8 +2,6 @@
 layout: default
 title: Team Game
 ---
-game 
-
         
 ---      
 <div class="container bg-secondary" style="text-align:center;">
