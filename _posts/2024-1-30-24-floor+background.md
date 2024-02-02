@@ -141,7 +141,7 @@ courses: { compsci: {week: 7} }
     //--
     // NEW CODE - IMAGE URLS FOR BACKGROUND IMAGES
     //--
-    imageBackground.src = 'https://samayass.github.io/samayaCSA/images/background.png';
+    imageBackground.src = '/images/jungle.background.jpg';
     imageHills.src = 'https://samayass.github.io/samayaCSA/images/hills.png';
     // Create instances of platform, tube, block object, and generic objects
     let platform = new Platform(image);
