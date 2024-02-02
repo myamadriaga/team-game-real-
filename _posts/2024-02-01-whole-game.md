@@ -1,3 +1,13 @@
+---
+toc: true
+comments: false
+layout: post
+title: whole game
+description: 
+type: plans
+courses: { compsci: {week: 0} }
+---
+
 <style>
     #canvas {
         margin: 0;
