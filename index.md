@@ -6,28 +6,6 @@ game
 
         
 ---      
-<div class="container bg-secondary" style="text-align:center;">
-  <!-- Main Menu -->
-        <div id="menu" class="py-4 text-light">
-            <p>Welcome to Escape the Jungle!, press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin your adventure</p>
-            <a id="new_game" class="link-alert">new game</a>
-            <a id="setting_menu" class="link-alert">settings</a>
-        </div>
-   <!-- Play Screen -->
-        <canvas id="snake" class="wrap" width="320" height="320" tabindex="1"></canvas>
-    <!-- Settings Screen -->
-        <div id="setting" class="py-4 text-light">
-            <p>Settings Screen, press <span style="background-color: #FFFFFF; color: #000000">space</span> to go back to playing</p>
-            <a id="new_game2" class="link-alert">new game</a>
-            <br>
-            <p>Speed:
-                <input id="speed1" type="radio" name="speed" value="120" checked/>
-                <label for="speed1">Slow</label>
-                <input id="speed2" type="radio" name="speed" value="75"/>
-                <label for="speed2">Normal</label>
-                <input id="speed3" type="radio" name="speed" value="35"/>
-                <label for="speed3">Fast</label>
-            </p>
 
 <style>
     #canvas {
