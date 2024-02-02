@@ -5,6 +5,7 @@ title: Team Game
 game 
 
         
+---      
 <div class="container bg-secondary" style="text-align:center;">
   <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
@@ -62,7 +63,7 @@ game
         }
         // Method to draw the player on the canvas
         draw() {
-            c.fillStyle = 'red';
+            c.fillStyle = 'pink';
             c.fillRect(this.position.x, this.position.y, this.width, this.height);
         }
         // Method to update the player position and velocity
