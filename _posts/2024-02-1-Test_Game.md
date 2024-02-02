@@ -1,24 +1,18 @@
 ---
 layout: post
-title:  game2
+title:  Test Game
 description: game
 type: tangibles
 courses: { compsci: {week: 2} }
 ---
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <style>
-     #canvas {
+<style>
+    #canvas {
         margin: 0;
         border: 1px solid white;
     }
-  </style>
-</head>
-<body>
-  <canvas id='canvas'></canvas>
-    <script>
+</style>
+<canvas id='canvas'></canvas>
+<script>
     let canvas = document.getElementById('canvas');
     let c = canvas.getContext('2d');
     canvas.width = 650;
@@ -36,130 +30,35 @@ courses: { compsci: {week: 2} }
             };
             this.width = 30;
             this.height = 30;
-            this.frameWidth = 55;  // Width of each frame in the sprite sheet
-            this.frameHeight = 55; // Height of each frame in the sprite sheet
-            this.frameIndex = 0;   // Index of the current frame
-            this.framesPerRow = 4; // Number of frames per row in the sprite sheet
-            this.image = new Image();
-            this.image.src = '{{site.baseurl}}/images/hello_kitty-removebg-preview.png'; // Replace with your sprite sheet path
         }
         draw() {
-            // Draw the current frame from the sprite sheet
-            c.drawImage(
-                this.image,
-                this.frameIndex * this.frameWidth,
-                0, // Assumes all frames are in the same row
-                this.frameWidth,
-                this.frameHeight,
-                this.position.x,
-                this.position.y,
-                this.width,
-                this.height
-            );
+            c.fillStyle = 'red';
+            c.fillRect(this.position.x, this.position.y, this.width, this.height);
         }
         update() {
-            // Update the frame index to create animation
-            this.frameIndex = (this.frameIndex + 1) % this.framesPerRow;
             this.draw();
             this.position.y += this.velocity.y;
             this.position.x += this.velocity.x;
-            if (this.position.y + this.height + this.velocity.y <= canvas.height) {
+            if (this.position.y + this.height + this.velocity.y <= canvas.height)
                 this.velocity.y += gravity;
-            } else {
+            else
                 this.velocity.y = 0;
+        }
+    }
+    class Platform {
+        constructor(image) {
+            this.position = {
+                x: 0,
+                y: 300
             }
+            this.image = image;
+            this.width = 650;
+            this.height = 100;
+        }
+        draw() {
+            c.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
         }
     }
-    function animate() {
-        requestAnimationFrame(animate);
-        c.clearRect(0, 0, canvas.width, canvas.height);
-        player.update();
-    }
-    animate();
-    let keys = {
-        right: {
-            pressed: false
-        },
-        left: {
-            pressed: false
-        }
-    }
-    addEventListener('keydown', ({ keyCode }) => {
-        switch (keyCode) {
-            case 65: // A key
-                console.log('left');
-                keys.left.pressed = true;
-                player.velocity.x = -2; // Move left
-                break;
-            case 68: // D key
-                console.log('right');
-                keys.right.pressed = true;
-                player.velocity.x = 2; // Move right
-                break;
-        }
-    });
-    addEventListener('keyup', ({ keyCode }) => {
-        switch (keyCode) {
-            case 65: // A key
-                console.log('left');
-                keys.left.pressed = false;
-                player.velocity.x = 0; // Stop moving left
-                break;
-            case 68: // D key
-                console.log('right');
-                keys.right.pressed = false;
-                player.velocity.x = 0; // Stop moving right
-                break;
-        }
-    });
-        // Other collision and game logic...
-   // animate();
-   // let keys = {
-   //     right: {
-    //        pressed: false
-   //     },
-   //     left: {
-   //         pressed: false
-    //    }
-  ///  }
-    addEventListener('keydown', ({ keyCode }) => {
-        switch (keyCode) {
-            case 65:
-                console.log('left');
-                keys.left.pressed = true;
-                break;
-            case 83:
-                console.log('down');
-                break;
-            case 68:
-                console.log('right');
-                keys.right.pressed = true;
-                break;
-            case 87:
-                console.log('up');
-                player.velocity.y -= 20;
-                break;
-        }
-    });
-    addEventListener('keyup', ({ keyCode }) => {
-        switch (keyCode) {
-            case 65:
-                console.log('left');
-                keys.left.pressed = false;
-                break;
-            case 83:
-                console.log('down');
-                break;
-            case 68:
-                console.log('right');
-                keys.right.pressed = false;
-                break;
-            case 87:
-                console.log('up');
-                player.velocity.y = -20;
-                break;
-        }
-    }) 
     class Tube {
         constructor(image) {
             this.position = {
@@ -223,16 +122,24 @@ courses: { compsci: {week: 2} }
     // NEW CODE - ADD GOOMBA IMAGE
     //--
     let imageGoomba = new Image()
-    imageGoomba.src = '{{site.baseurl}}/images/cute-pink-bow-png-0-removebg-preview.png';
+    imageGoomba.src = '{{site.baseurl}}/images/hello_kitty-removebg-preview.png';
     let platform = new Platform(image)
     let tube = new Tube(imageTube)
     let blockObject = new BlockObject(imageBlock)
     let goomba = new Goomba(imageGoomba)
     player = new Player()
+    let keys = {
+        right: {
+            pressed: false
+        },
+        left: {
+            pressed: false
+        }
+    }
     function animate() {
         requestAnimationFrame(animate);
         c.clearRect(0, 0, canvas.width, canvas.height);
-        image.draw();
+        platform.draw();
         player.update();
         tube.draw();
         blockObject.draw();
@@ -384,6 +291,4 @@ courses: { compsci: {week: 2} }
                 break;
         }
     })
-  </script>
-</body>
-</html>
+</script>
