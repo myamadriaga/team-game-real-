@@ -181,7 +181,7 @@ game
     //--
     // NEW CODE - IMAGE URLS FOR BACKGROUND IMAGES
     //--
-    imageBackground.src = 'https://t3.ftcdn.net/jpg/01/36/89/30/360_F_136893040_rrGzTIulop7TfMHkMGAjiHQybsoDxl6f.jpg';
+    imageBackground.src = '/images/jungle.background.jpg';
     imageHills.src = 'https://samayass.github.io/samayaCSA/images/hills.png';
     // Create instances of platform, tube, block object, and generic objects
     let platform = new Platform(image);
