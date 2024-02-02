@@ -1,10 +1,6 @@
 ---
 layout: default
 title: Team Game
----
-game 
-
-        
 ---      
 
 <style>
