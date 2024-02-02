@@ -8,13 +8,6 @@ type: plans
 courses: { compsci: {week: 0} }
 ---
 
-
-
-
-
-
-
-
 <style>
     #canvas {
         margin: 0;

@@ -1,32 +1,55 @@
 ---
 layout: default
 title: Team Game
+<<<<<<< HEAD
 ---
         
+=======
+>>>>>>> 50a7bf596702adc1de00d80b853de68062747c8b
 ---      
-<div class="container bg-secondary" style="text-align:center;">
-  <!-- Main Menu -->
-        <div id="menu" class="py-4 text-light">
-            <p>Welcome to Escape the Jungle!, press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin your adventure</p>
-            <a id="new_game" class="link-alert">new game</a>
-            <a id="setting_menu" class="link-alert">settings</a>
-        </div>
-   <!-- Play Screen -->
-        <canvas id="snake" class="wrap" width="320" height="320" tabindex="1"></canvas>
-    <!-- Settings Screen -->
-        <div id="setting" class="py-4 text-light">
-            <p>Settings Screen, press <span style="background-color: #FFFFFF; color: #000000">space</span> to go back to playing</p>
-            <a id="new_game2" class="link-alert">new game</a>
-            <br>
-            <p>Speed:
-                <input id="speed1" type="radio" name="speed" value="120" checked/>
-                <label for="speed1">Slow</label>
-                <input id="speed2" type="radio" name="speed" value="75"/>
-                <label for="speed2">Normal</label>
-                <input id="speed3" type="radio" name="speed" value="35"/>
-                <label for="speed3">Fast</label>
-            </p>
+## <span style="font-family:Courier New; font-size: 30px;">Escape the Jungle!</span>
 
+<span style="font-family:Courier New; font-size: 20px;">Abby M., Manahil K., Mya M., Sahana P.</span>
+
+## <span style="font-family:Courier New; font-size: 24px;">About the game</span>
+
+
+
+<head>
+  <font face="Courier New"><title>snake High Score</title></font>
+</head>
+<body>
+  <!-- Your game canvas or container -->
+  
+  <div>
+    <font face="Courier New"><p class="fs-4">High score: <span id="highScore">0</span></p></font>
+  </div>
+ <script>
+    {function(){
+        /* Attributes of Game */
+        /////////////////////////////////////////////////////////////
+        // HTML Game IDs
+        const high_score = document.getElementById("highScore"); 
+        // HTML Screen IDs (div)
+        const SCREEN_MENU = -1, SCREEN_GAME_OVER=1, SCREEN_SETTING=2;
+        const screen_menu = document.getElementById("menu");
+        const screen_game_over = document.getElementById("gameover");
+        const screen_setting = document.getElementById("setting");
+        // HTML Event IDs (a tags)
+        const button_new_game = document.getElementById("new_game");
+        const button_new_game1 = document.getElementById("new_game1");
+        const button_new_game2 = document.getElementById("new_game2");
+        const button_setting_menu = document.getElementById("setting_menu");
+        const button_setting_menu1 = document.getElementById("setting_menu1");
+        /* Display Control */
+        /////////////////////////////////////////////////////////////
+        // 0 for the game
+        // 1 for the main menu
+        // 2 for the settings screen
+        // 3 for the game over screen
+            }
+        }
+        
 <style>
     #canvas {
         margin: 0;
@@ -61,7 +84,7 @@ title: Team Game
         }
         // Method to draw the player on the canvas
         draw() {
-            c.fillStyle = 'pink';
+            c.fillStyle = 'red';
             c.fillRect(this.position.x, this.position.y, this.width, this.height);
         }
         // Method to update the player position and velocity
@@ -160,7 +183,7 @@ title: Team Game
     //--
     // NEW CODE - IMAGE URLS FOR BACKGROUND IMAGES
     //--
-    imageBackground.src = 'https://samayass.github.io/samayaCSA/images/background.png';
+    imageBackground.src = '/images/jungle.background.jpg';
     imageHills.src = 'https://samayass.github.io/samayaCSA/images/hills.png';
     // Create instances of platform, tube, block object, and generic objects
     let platform = new Platform(image);
