@@ -1,14 +1,7 @@
 ---
 layout: default
 title: Team Game
-<<<<<<< HEAD
 ---      
-=======
----
-game 
-
->>>>>>> b5b7b90c4578d430e79127c74969e24c4b8bfdcc
-
 ## <span style="font-family:Courier New; font-size: 30px;">Escape the Jungle!</span>
 
 <span style="font-family:Courier New; font-size: 20px;">Abby M., Manahil K., Mya M., Sahana P.</span>
@@ -27,7 +20,7 @@ game
     <font face="Courier New"><p class="fs-4">High score: <span id="highScore">0</span></p></font>
   </div>
  <script>
-    (function(){
+    {function(){
         /* Attributes of Game */
         /////////////////////////////////////////////////////////////
         // HTML Game IDs
