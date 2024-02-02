@@ -1,9 +1,13 @@
 ---
 layout: default
 title: Team Game
+<<<<<<< HEAD
+---      
+=======
 ---
 game 
 
+>>>>>>> b5b7b90c4578d430e79127c74969e24c4b8bfdcc
 
 ## <span style="font-family:Courier New; font-size: 30px;">Escape the Jungle!</span>
 
