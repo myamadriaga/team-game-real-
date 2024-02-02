@@ -1,15 +1,7 @@
 ---
 layout: default
 title: Team Game
----
-<<<<<<< HEAD
-game 
-=======
->>>>>>> ce40ef15f239085b5f2cf9731b053498c0919530
-
-        
-<<<<<<< HEAD
-=======
+---      
 <div class="container bg-secondary" style="text-align:center;">
   <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
@@ -359,4 +351,3 @@ game
         }
     });
 </script>
->>>>>>> ce40ef15f239085b5f2cf9731b053498c0919530
