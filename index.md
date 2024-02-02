@@ -61,7 +61,7 @@ title: Team Game
         }
         // Method to draw the player on the canvas
         draw() {
-            c.fillStyle = 'red';
+            c.fillStyle = 'pink';
             c.fillRect(this.position.x, this.position.y, this.width, this.height);
         }
         // Method to update the player position and velocity
