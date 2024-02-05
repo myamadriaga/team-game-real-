@@ -4,9 +4,6 @@ title: Team Game
 <<<<<<< HEAD
 ---
         
-=======
->>>>>>> 50a7bf596702adc1de00d80b853de68062747c8b
----      
 ## <span style="font-family:Courier New; font-size: 30px;">Escape the Jungle!</span>
 
 <span style="font-family:Courier New; font-size: 20px;">Abby M., Manahil K., Mya M., Sahana P.</span>
