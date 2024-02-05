@@ -10,10 +10,6 @@ title: Team Game
 ## <span style="font-family:Courier New; font-size: 24px;">About the game</span>
 
 
-
-<head>
-  <span style="font-family:Courier New; font-size: 20px;">snake High Score</span>
-
 </head>
 <body>
   <!-- Your game canvas or container -->
