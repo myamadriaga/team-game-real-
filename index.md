@@ -3,10 +3,6 @@ layout: default
 title: Team Game
 ---
         
-<<<<<<< HEAD
-=======
----      
->>>>>>> 396fd51946c7939348c550bebf97e46b549d7ee4
 ## <span style="font-family:Courier New; font-size: 30px;">Escape the Jungle!</span>
 
 <span style="font-family:Courier New; font-size: 20px;">Abby M., Manahil K., Mya M., Sahana P.</span>
