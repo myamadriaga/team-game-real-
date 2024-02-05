@@ -12,7 +12,8 @@ title: Team Game
 
 
 <head>
-  <font face="Courier New"><title>snake High Score</title></font>
+  <span style="font-family:Courier New; font-size: 20px;">snake High Score</span>
+
 </head>
 <body>
   <!-- Your game canvas or container -->
