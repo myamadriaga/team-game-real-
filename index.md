@@ -10,7 +10,6 @@ title: Team Game
 ## <span style="font-family:Courier New; font-size: 24px;">About the game</span>
 
 
-</head>
 <body>
   <!-- Your game canvas or container -->
   
