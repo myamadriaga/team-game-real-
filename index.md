@@ -14,7 +14,7 @@ title: Team Game
   <!-- Your game canvas or container -->
   
   <div>
-    <font face="Courier New"><p class="fs-4">High score: <span id="highScore">0</span></p></font>
+    <span style="Courier New"><p class="fs-4">High score: <span id="highScore">0</span>
   </div>
  <script>
     {function(){
