@@ -9,36 +9,26 @@ title: Team Game
 
 ## <span style="font-family:Courier New; font-size: 24px;">About the game</span>
 
-
+  <!-- snake game -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snake Game</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
 <body>
-  <!-- Your game canvas or container -->
-  
-  <div>
-    <font face="Courier New"><p class="fs-4">High score: <span id="highScore">0</span></p></font>
-  </div>
- <script>
-    {function(){
-        /* Attributes of Game */
-        /////////////////////////////////////////////////////////////
-        // HTML Game IDs
-        const high_score = document.getElementById("highScore"); 
-        // HTML Screen IDs (div)
-        const SCREEN_MENU = -1, SCREEN_GAME_OVER=1, SCREEN_SETTING=2;
-        const screen_menu = document.getElementById("menu");
-        const screen_game_over = document.getElementById("gameover");
-        const screen_setting = document.getElementById("setting");
-        // HTML Event IDs (a tags)
-        const button_new_game = document.getElementById("new_game");
-        const button_new_game1 = document.getElementById("new_game1");
-        const button_new_game2 = document.getElementById("new_game2");
-        const button_setting_menu = document.getElementById("setting_menu");
-        const button_setting_menu1 = document.getElementById("setting_menu1");
-        /* Display Control */
-        /////////////////////////////////////////////////////////////
-        // 0 for the game
-        // 1 for the main menu
-        // 2 for the settings screen
-        // 3 for the game over screen
-            }
-        }
-        
+	
+	<header>
+		<a href="index.html" id="home">Home</a>
+		<h1>Snake Game</h1>
+	</header>
+	
+	
+	
+</body>
+</html>
+
