@@ -1,7 +1,6 @@
 ---
 ---
-
-{@import "{{ site.theme }}";}
+ @import "{{ site.theme }}";
 
 // STYLING PREFERNCES for SITE
 // mixin used as a template for buttons
@@ -88,5 +87,5 @@
     background-color: #e70f0f;
   }
 
-}
+
  
