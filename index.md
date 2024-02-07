@@ -109,6 +109,30 @@ title: Team Game
             c.drawImage(this.image, this.position.x, this.position.y);
         }
     }
+	// NEW CODE - CREATE GOOMBA CLASS
+    //--
+    class Goomba {
+        constructor(image) {
+            this.position = {
+                x: 250,
+                y: 245
+            };
+            this.image = image;
+            this.width = 55;
+            this.height = 55;
+            this.velocity = {
+                x: -2,
+                y: 0
+            }
+        }
+        draw() {
+            c.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
+        }
+        update() {
+            this.position.x += this.velocity.x;
+            this.draw();
+        }
+    }
     //--
     // NEW CODE - CREATE GENERICOBJECT CLASS FOR THE BACKGROUND IMAGES
     //--
@@ -131,6 +155,23 @@ title: Team Game
     let image = new Image();
     let imageTube = new Image();
     let imageBlock = new Image();
+	// NEW CODE - ADD GOOMBA IMAGE
+    //--
+    let imageGoomba = new Image()
+    imageGoomba.src = 'https://samayass.github.io/samayaCSA/images/goomba.png';
+    let platform = new Platform(image)
+    let tube = new Tube(imageTube)
+    let blockObject = new BlockObject(imageBlock)
+    let goomba = new Goomba(imageGoomba)
+    player = new Player()
+    let keys = {
+        right: {
+            pressed: false
+        },
+        left: {
+            pressed: false
+        }
+    }
     //--
     // NEW CODE - ADD IMAGES FOR BACKGROUND
     //--
@@ -184,9 +225,13 @@ title: Team Game
         player.update();
         tube.draw();
         blockObject.draw();
-        // Handle collisions and interactions
+		//-
+		// NEW CODE - UPDATE GOOMBA ANIMATION
+        //--
+		// Handle collisions and interactions
         // Handle collision between player and block object
-        if (
+        goomba.update();
+		if (
             player.position.y + player.height <= blockObject.position.y &&
             player.position.y + player.height + player.velocity.y >= blockObject.position.y &&
             player.position.x + player.width >= blockObject.position.x &&
@@ -261,6 +306,33 @@ title: Team Game
         {
             player.velocity.x = 0;
         }
+		//--
+        // NEW CODE - GOOMBA COLLISION DETECTION
+        //--
+        if(
+            player.position.y + player.height <= goomba.position.y &&
+            player.position.y + player.height + player.velocity.y >= goomba.position.y &&
+            player.position.x + player.width >= goomba.position.x &&
+            player.position.x <= goomba.position.x + goomba.width
+        )
+        {
+            player.velocity.y = -20;
+        }
+        if (
+            goomba.position.x >= platform.position.x &&
+            goomba.position.x <= platform.position.x
+        )
+        {
+            goomba.velocity.x = 2;
+        }
+        if (
+            goomba.position.x + goomba.width <= tube.position.x &&
+            goomba.position.x + goomba.width + goomba.velocity.x >= tube.position.x
+        )
+        {
+            goomba.velocity.x = -2;
+        }
+    }
         // Move the player horizontally and adjust other objects
         if (keys.right.pressed && player.position.x < 400) {
             player.velocity.x = 15;
@@ -335,5 +407,4 @@ title: Team Game
         }
     });
 </script>
-
 

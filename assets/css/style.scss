@@ -2,7 +2,6 @@
 ---
 
 @import "{{ site.theme }}";
- @import "{{ site.theme }}";
 
 // STYLING PREFERNCES for SITE
 // mixin used as a template for buttons
@@ -88,6 +87,3 @@
     @extend .button;
     background-color: #e70f0f;
   }
-
-
- 
