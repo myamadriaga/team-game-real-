@@ -6,7 +6,7 @@ customization of Clumsy Bird to play with your friends.
 
 If you want to add your own assets to the game, this is the list of the assets used in this game. Just create or change the image
 below with your own customization. Remember to keep the names and sizes.
-- [bg.png](https://t3.ftcdn.net/jpg/01/36/89/30/360_F_136893040_rrGzTIulop7TfMHkMGAjiHQybsoDxl6f.jpg) - Size: `900x504px`. This is the Background image used in the game.
+- [bg.png](https://t3.ftcdn.net/jpg/01/36/89/30/360_F_136893040_rrGzTIulop7TfMHkMGAjiHQybsoDxl6f.png) - Size: `900x504px`. This is the Background image used in the game.
 - [clumsy.png](https://raw.githubusercontent.com/ellisonleao/clumsy-bird/gh-pages/data/img/clumsy.pngs) - Size: `255x60px` . This is the bird animation image. It contains 3 animation frames.
 - [gameover.png](https://raw.githubusercontent.com/ellisonleao/clumsy-bird/gh-pages/data/img/gameover.png) - Size: `245x132px`. The Game Over logo.
 - [gameoverbg.png](https://raw.githubusercontent.com/ellisonleao/clumsy-bird/gh-pages/data/img/gameoverbg.png) - Size: `505x361px`. This is the Game Over square background used for the scores.
