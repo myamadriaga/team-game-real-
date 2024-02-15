@@ -57,5 +57,7 @@ var game = {
         me.pool.register("ground", game.Ground, true);
 
         me.state.change(me.state.MENU);
+
     }
 };
+
