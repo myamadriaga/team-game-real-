@@ -123,8 +123,8 @@ game.PipeEntity = me.Entity.extend({
         settings.image = this.image = me.loader.getImage('pipe');
         settings.width = 148;
         settings.height= 1664;
-        settings.framewidth = 148;
-        settings.frameheight = 1664;
+        settings.framewidth = 3291;
+        settings.frameheight = 4724;
 
         this._super(me.Entity, 'init', [x, y, settings]);
         this.alwaysUpdate = true;
